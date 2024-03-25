@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class ThirdTest {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException { // explain me this please
         WebDriver driver = new ChromeDriver();
         driver.get("https://devexpress.github.io/testcafe/example");
         driver.manage().window().maximize();
@@ -16,7 +16,7 @@ public class ThirdTest {
         driver.findElement(By.cssSelector("input#traffic-markup-analysis")).click();
         driver.findElement(By.cssSelector("input#tried-test-cafe")).click();
         driver.findElement(By.id("comments")).sendKeys("I liked your dark coffee");
-        Thread.sleep(1000);
+        Thread.sleep(1000); // why do you need a sleep here? 
         driver.findElement(By.cssSelector("button#submit-button")).click();
     }
 }
